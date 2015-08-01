@@ -1,5 +1,4 @@
 # Anjelica
-==========
 **A Mumble bot built on piepan**
 
 ## Features
