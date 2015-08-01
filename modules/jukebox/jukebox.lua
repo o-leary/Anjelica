@@ -208,10 +208,10 @@ function get_youtube_info(id, username, e)
 		return false
 	end
 	local cmd = [[
-		wget -q -O - 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=%s&key=AIzaSyAS6nM9DORQBQ01fKA-cX3tdJL7fMxyKjE' |
+		wget -q -O - 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=%s&key=%s' |
 		jshon -Q -e items -e 0 -e snippet -e title -u -p -e thumbnails -e default -e url -u
 	]]
-	local jshon = io.popen(string.format(cmd, id))
+	local jshon = io.popen(string.format(cmd, id, config.youtube_api_key))
 	local name = jshon:read()
 	local thumbnail = jshon:read()
 	if name == nil then
@@ -219,10 +219,10 @@ function get_youtube_info(id, username, e)
 	end
 	
 	local cmd = [[
-		wget -q -O - 'https://ytgrabber.p.mashape.com/app/get/%s' --header='X-Mashape-Key: luf0udmgRCmshvQJ2q7nne3upwnUp1IZ22ijsn0SyMvcNYHVL0' --header='Accept: application/json' |
+		wget -q -O - 'https://ytgrabber.p.mashape.com/app/get/%s' --header='X-Mashape-Key: %s' --header='Accept: application/json' |
 		jshon -e link -e -1 -e url -u
 	]]
-	local jshon = io.popen(string.format(cmd, id))
+	local jshon = io.popen(string.format(cmd, id, config.mashape_key))
         local url = jshon:read()
 
 	return youtube_info_completed({
