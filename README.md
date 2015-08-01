@@ -15,7 +15,7 @@ Current modules include:
 2. Install [ffmpeg](https://www.ffmpeg.org/) and [jshon](http://kmkeen.com/jshon/). `sudo apt-get install jshon ffmpeg`.
 3. Download a copy of this repo and edit the config.lua file to include your own [Mashape](https://www.mashape.com/) and [Youtube](https://console.developers.google.com/) api keys.
 4. Generate your own certificate and key and place them in the keys folder (the repo ones are empty).
-4. Copy your piepan executable to the anjelica folder, and run start.sh.
+5. Copy your piepan executable to the anjelica folder, and run start.sh.
 
 ## Commands
 Send a message to Anjelica containing "!help" to see an updated list of commands. At the time of writing these were:
@@ -57,7 +57,7 @@ Welcome Tones (Admin Commands):
 - [Matthieu Grieger](https://github.com/matthieugrieger) for MumbleDJ
 - [Pierre Chapuis](https://github.com/catwell) for dequeue library
 - Gerhard Roethlin for persistence library
-- [Werner Robitza](https://github.com/slhck) for python normalize script
+- [Werner Robitza](https://github.com/slhck) for python normalize audio script
 
 ## License
 ```
