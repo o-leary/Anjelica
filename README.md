@@ -46,9 +46,6 @@ Music Commands:
 Soundboard Sounds:
 #cheer, #hello, #huh, #image, #lol, #mock, #nice
 
-Soundboard Sounds:
-#cheer, #hello, #huh, #image, #lol, #mock, #nice
-
 Welcome Tones (Admin Commands):
 !addwelcome user file.ogg - Add a welcome sound for a user.
 !delwelcome user - Remove a welcome sound for a user.
