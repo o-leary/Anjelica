@@ -11,10 +11,10 @@ Current modules include:
 - A seperate module exists for AIML based conversation using A.L.I.C.E from [A.L.I.C.E. AI Foundation, Inc.](http://www.alicebot.org/), which is LGPL licensed.
 
 ## How to install
-1 Install [piepan](https://github.com/layeh/piepan)
-2 Install [ffmpeg](https://www.ffmpeg.org/) and [jshon](http://kmkeen.com/jshon/). `sudo apt-get install jshon ffmpeg`
-3 Download a copy of this repo and edit the config.lua file to include your own [Mashape api key](https://www.mashape.com/)
-4 Copy your piepan executable to the anjelica folder, and run start.sh.
+1. Install [piepan](https://github.com/layeh/piepan)
+2. Install [ffmpeg](https://www.ffmpeg.org/) and [jshon](http://kmkeen.com/jshon/). `sudo apt-get install jshon ffmpeg`
+3. Download a copy of this repo and edit the config.lua file to include your own [Mashape api key](https://www.mashape.com/)
+4. Copy your piepan executable to the anjelica folder, and run start.sh.
 
 ## Commands
 Send a message to Anjelica containing "!help" to see an updated list of commands. At the time of writing these were:
